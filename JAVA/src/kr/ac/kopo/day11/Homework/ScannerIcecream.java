@@ -1,4 +1,7 @@
 package kr.ac.kopo.day11.Homework;
+/**
+ * 숫자, 문자, 문자열 입력 메소드
+ */
 
 import java.util.Scanner;
 
@@ -17,7 +20,7 @@ public class ScannerIcecream {
 	
 	int nextInt(String msg) {
 		System.out.print(msg);
-		int num = sc.nextInt();
+		int num =(sc.nextInt());
 		sc.nextLine();
 		return num;
 	}
