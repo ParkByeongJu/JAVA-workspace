@@ -10,26 +10,26 @@ public class ScannerUtil {
 	
 	Scanner sc;
 	
-	ScannerUtil(){
+	public ScannerUtil(){
 		sc = new Scanner(System.in);
 	}
 	
-	char nextChar(String msg) {
-		System.out.print(msg);
-		return sc.nextLine().charAt(0);
-	}
-	
-	int nextInt(String msg) {
-		System.out.print(msg);
-		int num = sc.nextInt();
-		sc.nextLine();
-		return num;
-	}
-	
-	String nextString(String msg) {
-		System.out.print(msg);
-		String str = sc.nextLine();
-		return str;
-	}
+	public	char nextChar(String msg) {
+			System.out.print(msg);
+			return sc.nextLine().charAt(0);
+			}
+		
+	public	int nextInt(String msg) {
+			System.out.print(msg);
+			int num = sc.nextInt();
+			sc.nextLine();
+			return num;
+			}
+		
+	public	String nextString(String msg) {
+			System.out.print(msg);
+			String str = sc.nextLine();
+			return str;
+			}
 
 }
