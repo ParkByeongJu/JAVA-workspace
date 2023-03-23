@@ -2,10 +2,8 @@ package kr.ac.kopo.day13.Homework;
 
 public class Triangle extends Shape {
 
-	ScannerShape scan = new ScannerShape();
-
 	public void area() {
-		
+
 		int width = scan.nextInt("밑변의 길이를 입력하세요 : ");
 		int height = scan.nextInt("높이의 길이를 입력하세요 : ");
 
