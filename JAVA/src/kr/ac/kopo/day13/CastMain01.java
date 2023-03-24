@@ -7,6 +7,15 @@ public class CastMain01 {
 //	}
 	
 	public static void print(Parent p) {
+		if(p instanceof Child01) {
+			Child01 c01 = (Child01)p;
+			c01.sleep();
+			c01.study();
+		} else if(p instanceof Child02) {
+			Child02 c02 = (Child02)p;
+			c02.game();
+			c02.sing();
+		}
 		p.info();
 	}
 	
