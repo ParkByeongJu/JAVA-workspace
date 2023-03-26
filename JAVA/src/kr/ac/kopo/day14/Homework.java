@@ -18,9 +18,9 @@ public class Homework {
 		
 		System.out.println("야구 게임을 시작합니다.");
 		while(true) {
-			num1 = (int)random.nextInt(100) % 9 + 1; //컴퓨터에 난수 입력1
-			num2 = (int)random.nextInt(100) % 9 + 1; //컴퓨터에 난수 입력2
-			num3 = (int)random.nextInt(100) % 9 + 1; //컴퓨터에 난수 입력3
+			num1 = (int)random.nextInt(9) + 1; //컴퓨터에 난수 입력1
+			num2 = (int)random.nextInt(9) + 1; //컴퓨터에 난수 입력2
+			num3 = (int)random.nextInt(9) + 1; //컴퓨터에 난수 입력3
 			
 			if(!(num1 == num2 || num2 == num3 || num1 == num3)) {
 				break;
@@ -28,7 +28,7 @@ public class Homework {
 		}
 		
 		while(cnt > 0) {
-			System.out.println("숫자를 입력해주세요");
+			System.out.println("숫자(1~9)를 입력해주세요");
 			user1 = sc.nextInt();
 			user2 = sc.nextInt();
 			user3 = sc.nextInt();
