@@ -19,6 +19,7 @@ public class ScissorsRockPaper implements Game {
 		int me = random.nextInt(3)+1;
 		int user = sc.nextInt();
 		
+		return 0 ;
 //		if() {
 //			
 //		}
