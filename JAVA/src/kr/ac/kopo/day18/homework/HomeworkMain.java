@@ -65,8 +65,14 @@ public class HomeworkMain {
 					break;
 				} 
 			}
+			System.out.println("-------------------------------");
+			System.out.println("\t전체회원 정보 출력");
+			System.out.println("-------------------------------");
+			System.out.println("아이디\t패스워드");
+			System.out.println("-------------------------------");
 			for (Member m : members) {
-				System.out.println(m.getId() + m.getPassword());
+				System.out.println(m.getId() + "\t "+ m.getPassword());
 			}
+			System.out.println("-------------------------------");
 	}
 }
