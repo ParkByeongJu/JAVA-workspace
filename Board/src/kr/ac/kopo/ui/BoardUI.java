@@ -28,7 +28,7 @@ public class BoardUI extends BaseUI {
 			IBoardUI ui = null;
 			switch (type) {
 			case 1:
-				System.out.println("전체 게시글 조회를 선택");
+				ui = new SearchAllUI();
 				break;
 			case 2:
 				ui = new SearchOneUI();
