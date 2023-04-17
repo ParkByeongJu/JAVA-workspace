@@ -1,7 +1,6 @@
 package kr.ac.kopo.service;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 import java.util.List;
 
 import kr.ac.kopo.dao.BoardDAO;

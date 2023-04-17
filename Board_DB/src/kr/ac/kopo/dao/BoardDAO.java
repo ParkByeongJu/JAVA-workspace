@@ -24,8 +24,10 @@ public class BoardDAO {
 		sql.append("insert into t_board(no, title, writer) ");
 		sql.append(" values(seq_t_board_no.nextval, ?, ?) ");
 
-		try (Connection conn = new ConnectionFactory().getConnection();
-				PreparedStatement pstmt = conn.prepareStatement(sql.toString());) {
+		try (
+			Connection conn = new ConnectionFactory().getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(sql.toString());
+		) {
 			pstmt.setString(1, board.getTitle());
 			pstmt.setString(2, board.getWriter());
 
